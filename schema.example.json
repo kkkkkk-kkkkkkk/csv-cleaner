@@ -1,0 +1,9 @@
+{
+  "id": "order_id",
+  "date": "order_date",
+  "amount": ["amount", "total"],
+  "qty": "qty",
+  "group": "region",
+  "label": "product",
+  "owner": "rep"
+}
