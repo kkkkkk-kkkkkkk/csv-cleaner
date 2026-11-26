@@ -1,3 +1,6 @@
+**[Live demo & sample output — see what “clean” actually looks like →](https://kkkkkk-kkkkkkk.github.io/csv-cleaner/)**
+
+---
 # csv-cleaner
 
 Turn a messy CSV export into a clean Excel workbook **and** a line-by-line issue report. Standard library plus `openpyxl`, no service, no upload, runs on your machine or a cron job.
