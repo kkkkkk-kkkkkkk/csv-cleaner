@@ -1,3 +1,5 @@
+**Try it in 3 seconds, no install beyond openpyxl:** [download dist/trial_pack.zip](https://github.com/kkkkkk-kkkkkkk/csv-cleaner/raw/main/dist/trial_pack.zip) and run python trial.py. Sample: 271 raw rows -> 171 valid, 97,735.00, 7 self-check formulas, 2.75s.
+
 **[Live demo & sample output — see what “clean” actually looks like →](https://kkkkkk-kkkkkkk.github.io/csv-cleaner/)**
 
 ---
