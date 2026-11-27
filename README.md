@@ -2,6 +2,8 @@
 
 **Second trial pack — invoices:** [download dist/pdf_trial_pack.zip](https://github.com/kkkkkk-kkkkkkk/csv-cleaner/raw/main/dist/pdf_trial_pack.zip) and run python trial.py. Sample: 5 invoice PDFs -> 5 ledger rows, 8 fields each, 4 issues flagged with field+reason, 1.30s, 10 unit tests.
 
+**Third trial pack — crawler:** [download dist/crawl_trial_pack.zip](https://github.com/kkkkkk-kkkkkkk/csv-cleaner/raw/main/dist/crawl_trial_pack.zip) and run python trial.py. Sample: 12 detail links -> 10 rows stored, 1 duplicate collapsed, 1 dead link reported on the failures sheet, field fill-rate 0.90, 2.15s.
+
 **[Live demo & sample output — see what “clean” actually looks like →](https://kkkkkk-kkkkkkk.github.io/csv-cleaner/)**
 
 ---
