@@ -1,6 +1,28 @@
 **[Live demo & sample output — see what “clean” actually looks like →](https://kkkkkk-kkkkkkk.github.io/csv-cleaner/)**
 
 ---
+## What's in this repo
+
+Four small tools, one principle: **never guess, never silently drop a row, always hand back a receipt.** Each runs offline on your own machine — standard library plus `openpyxl` (and `PyMuPDF` for the invoice reader).
+
+| | tool | turns | the number it reports |
+|---|---|---|---|
+| 1 | **csv-cleaner** — `clean.py`, repo root | a messy CSV export → clean workbook + row-by-row issue report | 28 unit tests; every dropped row is counted and named |
+| 2 | **crawl → table** — `demos/tender_crawler` | list pages → a 3-sheet workbook: records / failures / field fill-rate | 4 pages in → 3 stored, 1 deduplicated, fill-rate printed as 0.667 |
+| 3 | **invoice reader** — `demos/pdf_extract` | a folder of invoice PDFs → a ledger workbook with a review queue | 5 invoices → 40 fields, 3 flagged for review, 4 hard issues caught (duplicate number, tax mismatch, zero amount) |
+| 4 | **report builder** — `demos/excel_report` | a messy monthly sales file → a 6-sheet workbook where every total is a formula | 268 rows → 171 kept, 89 dropped, total 97,735.00, 7 of 7 cross-checks PASS at variance 0.000 |
+
+The common thread is the **receipt**: for each job the output says what came in, what went out, what was rejected and why, and what still needs a human decision. That is the difference between "my script cleaned your file" and a workbook you can defend in a meeting.
+
+Two rules hold across all four:
+
+- **Missing is not zero.** A blank amount stays blank, gets flagged, and stays out of the totals — the classic way a report quietly comes out too low.
+- **Totals are formulas, not numbers.** In the report builder, the summary and the check page are `SUMIFS` formulas over the detail sheet, so editing one row moves the totals and a PASS/FAIL page tells you whether they still tie. Verified by recalculating the workbook in LibreOffice, not by the script asserting it is right.
+
+Each folder has its own README with the exact command, the output layout, and the known limits. Dependencies are deliberately boring: `pip install openpyxl pymupdf`.
+
+---
+
 # csv-cleaner
 
 Turn a messy CSV export into a clean Excel workbook **and** a line-by-line issue report. Standard library plus `openpyxl`, no service, no upload, runs on your machine or a cron job.

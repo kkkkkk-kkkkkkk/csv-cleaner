@@ -1,0 +1,22 @@
+order_id,order_date,amount,qty,region,product,rep
+SO-1001,2026-01-05,"$1,250.00",12,North,Widget A,Kim
+SO-1002,2026-01-07,890.50,8,North,Widget B,Kim
+SO-1003,03/04/2026,430,3,South,Widget A,Lee
+SO-1004,2026.02.11,1.234,56,5,South,Widget C,Lee
+SO-1005,2026-02-14,2500,10,East,Widget B,Moreau
+,,,
+SO-1006,2026-03-01,,4,East,Widget A,Moreau
+SO-1006,2026-03-01,,4,East,Widget A,Moreau
+SO-1007,2026-03-05,¥780,0,West,Widget C,Tan
+SO-1008,25 Nov 2026,610,2,West,Widget A,Tan
+SO-1009,2026/04/09,"1,999.99",7,north,Widget D,Kim
+SO-1010,2026-04-18,4300,15,  North  ,Widget D,Kim
+SO-1011,2026-04-21,?,3,South,Widget B,Lee
+SO-1012,2026-05-02,1200,-2,Eastern,Widget A,Moreau
+SO-1013,2026-05-06,760,4,Eastern,Widget C,Moreau
+SO-1014,2026-05-19,$2 400,9,North,Widget B,Kim
+SO-1015,2026-06-01,980,5,south,Widget D,Lee
+SO-1016,2026-06-11,1450,6,West,Widget A,Tan
+SO-1017,2026-07-03,330,1,East,Widget C,Moreau
+,2026-07-08,2250,9,North,Widget A,K
+SO-1019,2026-08-15,1100,4,West,Widget D,Tan
